@@ -32,5 +32,5 @@ Se uso la libreria "leaflet" para el mapa
 - Componente "main": este es el home, que contendra el componente de la lista de los arboles y el componente modal para mostrar la información
 - Componente "tree-card": componente carta del arbol, aca se muestra el nombre y el sobrenombre del arbol, al hacerle click se levanta el modal con la información del arbol seleccionado
 - Componente "tree-modal": este componente tiene un fondo oscuro y un contenedor con el titulo, la imagen y el mapa con la locación segun las coordenadas
-- Servicio "tree-service": Desde se llama a la API otorgada
+- Servicio "tree-service": Servicio desde donde se llama a la API otorgada para la obtencion de los objetos(arboles)
 
