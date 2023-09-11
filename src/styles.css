@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* estilos globales */
+@import '~leaflet/dist/leaflet.css';
+
+html, body{
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #474545;
+}
+
+body{
+  background: linear-gradient(transparent 20%,rgba(38, 73, 47, 0.667) 100%,#214730 100%), url('./assets/geometric-leaves.png');
+}

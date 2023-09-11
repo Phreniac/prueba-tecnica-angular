@@ -1,27 +1,36 @@
+## Prueba Tecnica Angular 
+
+> Fabian Marin
+
 # AngularTree
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Este proyecto fue generado con Angular CLI versión 16.2.1.
+
+Css
+Routing
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecuta ng serve para un servidor de desarrollo. Navega a http://localhost:4200/. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta ng generate component nombre-del-componente para generar un nuevo componente. También puedes usar ng generate directive|pipe|service|class|guard|interface|enum|module.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta ng build para construir el proyecto. Los artefactos de construcción se guardarán en el directorio dist/.
 
-## Running unit tests
+## Map
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Se uso la libreria "leaflet" para el mapa
 
-## Running end-to-end tests
+## Components
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Se crearon 3 componentes y un servicio:
 
-## Further help
+- Componente "main": este es el home, que contendra el componente de la lista de los arboles y el componente modal para mostrar la información
+- Componente "tree-card": componente carta del arbol, aca se muestra el nombre y el sobrenombre del arbol, al hacerle click se levanta el modal con la información del arbol seleccionado
+- Componente "tree-modal": este componente tiene un fondo oscuro y un contenedor con el titulo, la imagen y el mapa con la locación segun las coordenadas
+- Servicio "tree-service": Desde se llama a la API otorgada
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

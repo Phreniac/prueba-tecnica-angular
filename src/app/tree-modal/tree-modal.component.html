@@ -1,0 +1,26 @@
+
+<!-- modal que detalla la información del arbol y el mapa con su locación
+este modal se abre al hacer click en una carta y actualiza el mapa segun su lat, lon -->
+<div class="tree-modal">
+  <div class="tree-modal-detail">
+    <div class="tree-detail-title">
+      <h2>{{ tree.object_name }}</h2>
+    </div>
+    <div class="tree-modal-detail-container">
+      <div class="tree-modal-detail-left">
+        <div class="tree-image">
+          <img [src]="tree.image_url" [alt]="tree.object_name">
+        </div>
+        <div class="tree-info">
+          {{tree.nickname}}
+        </div>
+      </div>
+      <div class="tree-modal-detail-right">
+        <div id="map" style="height: 400px; width: 100%;"></div>
+      </div>
+    </div>
+    <div class="modal-close">
+      <button (click)="close.emit()">Cerrar</button>
+    </div>
+  </div>
+</div>

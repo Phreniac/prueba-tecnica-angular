@@ -1,0 +1,13 @@
+<!-- titulo de la pagina -->
+<div class="main-title">
+  <h1>Arboles del Mundo</h1>
+</div>
+<!-- componente contenedor para la lista de los arboles que viene desde el ws
+Al hacer clic en una carta se abrira el modal con el mapa y la imagen
+-->
+<div class="trees-container">
+  <app-tree-card *ngFor="let tree of trees" [tree]="tree" (click)="showModal(tree)"></app-tree-card>
+</div>
+
+<!--componente modal para ver el detalle de un arbol -->
+<app-tree-modal *ngIf="selectedTree" [tree]="selectedTree" (close)="closeModal()"></app-tree-modal>

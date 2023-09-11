@@ -1,0 +1,13 @@
+.main-title{
+  text-align: center;
+}
+.main-title h1{
+  font-size: 28pt;
+  font-weight: 700;
+}
+.trees-container{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
